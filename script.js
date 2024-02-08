@@ -1,18 +1,5 @@
 const answers = [
-    "Are you sure?",
-    "Are you really sure??",
-    "Are you really realy sure???",
-    "Think again?",
-    "Don't believe in second chances?",
-    "Why are you being so cold?",
-    "Maybe we can talk about it?",
-    "I am not going to ask again!",
-    "Ok now this is hurting my feelings!",
-    "You are now just being mean!",
-    "Why are you doing this to me?",
-    "Please give me a chance!",
-    "I am begging you to stop!",
-    "Ok, Lets just start over.."
+    "Cute, try again <3"
 ]
 
 const no_button = document.getElementById('no-button');
@@ -25,7 +12,7 @@ no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
     if (clicks === 0) {
-        banner.src = "images/no.gif";
+        banner.src = "sanrio-emoji.gif.gif";
         refreshBanner();
     }
     clicks++;
@@ -53,7 +40,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "images/yes.gif";
+    banner.src = "pompompurin-vivian-kong.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
