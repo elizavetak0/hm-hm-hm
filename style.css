@@ -1,21 +1,9 @@
 body {
-    background-color: #F8C8DC;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-direction: row;
-    align-items: end;
-    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #F8C8DC;
 }
 
 /* Position the "No" button absolutely within body */
@@ -32,36 +20,47 @@ body {
     /* Smooth movement */
 }
 
-/* Make responsive for mobile */
-@media (max-width: 768px) {
-    body {
-        padding: 0 20px;
-    }
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
-.container {
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
+    margin-left: 90px;
 }
-
-.message {
-    display: none;
-}
-
-.banner-gif {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-
-    img {
-        width: auto;
-        height: 250px;
-    }
-}
-
-/* Path: /js/script.js */
