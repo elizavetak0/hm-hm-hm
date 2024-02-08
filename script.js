@@ -15,26 +15,7 @@ no_button.addEventListener('click', () => {
         banner.src = "sanrio-emoji.gif.gif";
         refreshBanner();
     }
-    clicks++;
-    // increase button height and width gradually to 250px
-    const sizes = [40, 50, 30, 35, 45]
-    const random = Math.floor(Math.random() * sizes.length);
-    size += sizes[random]
-    yes_button.style.height = `${size}px`;
-    yes_button.style.width = `${size}px`;
-    let total = answers.length;
-    // change button text
-    if (i < total - 1) {
-        no_button.innerHTML = answers[i];
-        i++;
-    } else if (i === total - 1) {
-        alert(answers[i]);
-        i = 0;
-        no_button.innerHTML = "No";
-        yes_button.style.height = "50px";
-        yes_button.style.width = "50px";
-        size = 50;
-    }
+
 });
 
 yes_button.addEventListener('click', () => {
